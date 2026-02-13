@@ -1,7 +1,7 @@
 Karan Upadhyay - Personal Portfolio
 This repository contains the source code for my personal portfolio website, designed to showcase my expertise in Artificial Intelligence, Machine Learning, and Software Development. It features a high-performance architecture reflecting my work in optimizing systems and building intelligent applications.
 
-🌐 View Live @ your-domain.com ---
+🌐 View Live [Karan Portfolio ](https://karan-portfolio-three-liard.vercel.app/)---
 ✨ Features
 AI/ML Focused Portfolio: Showcases specialized projects like DealFlow (RAG-based marketplace) and Shortly (High-performance URL system).
 
