@@ -76,7 +76,7 @@ export default function History() {
                     delay: index * 0.1,
                     ease: "easeOut",
                   }}
-                  viewport={{ once: false, margin: "-100px" }}
+                  viewport={{ once: true, margin: "-100px" }}
                   whileHover={{
                     scale: 1.02,
                     y: -5,

@@ -28,6 +28,7 @@ export default function AboutMe() {
             className="text-5xl font-serif tracking-tight leading-tight mb-3"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
             About Me
@@ -36,6 +37,7 @@ export default function AboutMe() {
             className="text-lg text-muted-foreground mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Hi, I'm Karan — a Full-Stack & Applied AI Engineer at Jain
@@ -53,6 +55,7 @@ export default function AboutMe() {
                 key={category.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="h-full">

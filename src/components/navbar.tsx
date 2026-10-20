@@ -82,8 +82,19 @@ export default function Navbar() {
         }
         setActiveSection(currentSection);
       };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
+      let raf = 0;
+      const onScroll = () => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          handleScroll();
+        });
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => {
+        cancelAnimationFrame(raf);
+        window.removeEventListener("scroll", onScroll);
+      };
     }
   }, [pathname]);
 

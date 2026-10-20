@@ -156,34 +156,7 @@
 }
 
 
-/* === START: CURSOR STYLES === */
 
-@media (hover: hover) {
-  html {
-    cursor: none;
-  }
-}
-
-.touch-device .custom-cursor-dot,
-.touch-device .custom-cursor-outline {
-  display: none !important;
-}
-
-.touch-device {
-  cursor: default !important;
-}
-
-/* cursor's visual styles */
-.custom-cursor-dot {
-  background-color: var(--cursor-highlight);
-  mix-blend-mode: difference;
-}
-
-.custom-cursor-outline {
-  border-color: var(--cursor-border);
-}
-
-/* === END: CURSOR STYLES === */
 
 /* In your globals.css or component styles */
 
