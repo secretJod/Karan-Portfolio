@@ -188,3 +188,9 @@
       350% 50%;
   }
 }
+/* Theme toggle circular reveal (View Transitions API) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
