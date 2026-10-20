@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "Kafka",
       "Redis",
     ],
-    image: "/placeholder.jpg",
+    image: "/aqspace.webp",
     github: "https://github.com/secretJod/AqSpace",
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       "School–parent app built as sole developer at JISL and shipped to the App Store, Google Play and web in 8 weeks (~200 parents, 15 teachers, 58 screens). Includes a consent-based face-recognition \"My Child\" album (96.4% precision / 91.8% recall) and 100x+ faster hot paths.",
     technologies: ["React Native", "Expo", "Node.js", "MySQL", "AWS"],
-    image: "/placeholder.jpg",
+    image: "/anubhuti.webp",
   },
   {
     id: 4,
