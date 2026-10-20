@@ -94,6 +94,13 @@ export default function History() {
                   <p className="mt-2 text-sm text-muted-foreground">
                     {item.description}
                   </p>
+                  {item.highlights && (
+                    <ul className="mt-2 list-disc pl-4 space-y-1 text-sm text-muted-foreground">
+                      {item.highlights.map((h) => (
+                        <li key={h}>{h}</li>
+                      ))}
+                    </ul>
+                  )}
                 </motion.div>
               </div>
             ))}

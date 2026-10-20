@@ -14,9 +14,9 @@ import { motion } from "motion/react";
 
 export default function AboutMe() {
   const techCategories = [
-    { title: "Frontend", data: frontendTech || [] },
-    { title: "Backend", data: backendTech || [] },
-    { title: "Tools & DevOps", data: toolsAndDevops || [] },
+    { title: "Development", data: frontendTech || [] },
+    { title: "Data & AI Engineering", data: backendTech || [] },
+    { title: "Cloud & DevOps", data: toolsAndDevops || [] },
     { title: "Languages", data: programmingLanguages || [] },
   ];
 
@@ -38,10 +38,11 @@ export default function AboutMe() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hi, I'm Karan — a Software Developer Intern and MCA student with a
-            strong focus on AI and Machine Learning. I specialize in building
-            intelligent, scalable applications by combining modern web
-            frameworks with data-driven solutions.
+            Hi, I'm Karan — a Full-Stack & Applied AI Engineer at Jain
+            Irrigation Systems, where I shipped a React Native app to the App
+            Store and Google Play as sole developer and build internal tools
+            with multi-agent Claude Code workflows. I'm also pursuing an MCA in
+            AI &amp; ML.
           </motion.p>
         </div>
 

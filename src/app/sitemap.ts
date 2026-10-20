@@ -2,8 +2,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Updated from sparshkamat.me to your local environment
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "https://karan-portfolio-three-liard.vercel.app";
 
   return [
     {

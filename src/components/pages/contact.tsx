@@ -232,12 +232,12 @@ export default function Contact() {
         <p className="text-sm">
           You can also reach me directly at{" "}
           <a
-            href="mailto:secret91750@gmail.com"
+            href="mailto:karanupadhyay1220@gmail.com"
             target="_blank"
             aria-label="Email Karan Upadhyay"
             className="text-primary underline underline-offset-4 hover:text-primary/90"
           >
-            secret91750@gmail.com
+            karanupadhyay1220@gmail.com
           </a>
         </p>
       </div>

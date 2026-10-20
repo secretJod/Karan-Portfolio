@@ -1,6 +1,6 @@
 import GithubIcon from "../../../public/github.svg";
 import LinkedinIcon from "../../../public/linkedin.svg";
-import { Mail } from "lucide-react";
+import { Mail, FileText } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import profilePhoto from "../../../public/headshot.jpg"; // Remember to replace headshot.jpg in your public folder!
@@ -58,12 +58,21 @@ export default function Hero() {
               />
             </Link>
             <Link
-              href="mailto:secret91750@gmail.com" // Update with your email
+              href="mailto:karanupadhyay1220@gmail.com"
               target="_blank"
               className="social-link"
               aria-label="Send Karan Upadhyay an email"
             >
               <Mail width={24} height={24} />
+            </Link>
+            <Link
+              href="/Karan2026.pdf"
+              target="_blank"
+              className="social-link"
+              aria-label="View Karan Upadhyay's resume"
+              title="Resume"
+            >
+              <FileText width={24} height={24} />
             </Link>
           </div>
           <h1 className="text-7xl md:pt-4 lg:pt-8 font-serif text-center md:text-left text-primary">
@@ -71,7 +80,10 @@ export default function Hero() {
             <span className="block lg:inline text-primary"> Upadhyay</span>
           </h1>
           <p className="font-serif text-xl pt-4 lg:pt-9 text-muted-foreground">
-            AI Engineer & Software Developer
+            Full-Stack &amp; Applied AI Engineer
+          </p>
+          <p className="font-serif text-sm pt-2 text-muted-foreground text-center md:text-left">
+            Full-Stack Developer @ Jain Irrigation Systems
           </p>
         </div>
       </div>

@@ -13,13 +13,15 @@ const robotoSerif = Roboto_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
-  title: "Karan Upadhyay - Software Development & AI Engineer",
+  metadataBase: new URL("https://karan-portfolio-three-liard.vercel.app"),
+  title: "Karan Upadhyay - Full-Stack & Applied AI Engineer",
   description:
-    "The portfolio of Karan Upadhyay, a Software Development Intern and MCA student specializing in AI, Machine Learning, and Full Stack Development.",
+    "The portfolio of Karan Upadhyay, a Full-Stack & Applied AI Engineer at Jain Irrigation Systems building React Native, Node.js, Python and LLM-agent software.",
   keywords: [
     "Karan Upadhyay",
-    "Software Development Intern",
+    "Full-Stack Developer",
+    "Applied AI Engineer",
+    "React Native",
     "AI & ML Engineer",
     "Next.js",
     "React",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     "Portfolio",
     "Python Developer",
   ],
-  authors: [{ name: "Karan Upadhyay", url: "http://localhost:3000" }],
+  authors: [{ name: "Karan Upadhyay", url: "https://karan-portfolio-three-liard.vercel.app" }],
   creator: "Karan Upadhyay",
 
   alternates: {
@@ -36,26 +38,17 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "http://localhost:3000",
-    title: "Karan Upadhyay - Software Development & AI Engineer",
+    url: "https://karan-portfolio-three-liard.vercel.app",
+    title: "Karan Upadhyay - Full-Stack & Applied AI Engineer",
     description:
-      "Explore the portfolio of Karan Upadhyay, featuring AI-driven projects like Intelligent Shopping Assistant and high-performance web applications.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Karan Upadhyay Portfolio",
-      },
-    ],
+      "Explore the portfolio of Karan Upadhyay, featuring a production URL shortener in Go, an AI learning workspace and a shipped React Native app.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Karan Upadhyay - Software Development & AI Engineer",
+    title: "Karan Upadhyay - Full-Stack & Applied AI Engineer",
     description:
-      "Explore the portfolio of Karan Upadhyay, specializing in AI/ML and Full Stack Development.",
-    images: ["/og-image.png"],
+      "Explore the portfolio of Karan Upadhyay, Full-Stack & Applied AI Engineer.",
   },
 };
 
@@ -78,11 +71,11 @@ export default function RootLayout({
             <NavbarRes />
             <main className="flex-grow relative z-10">
               {children}
-              <Analytics />
-              <SpeedInsights />
             </main>
           </div>
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

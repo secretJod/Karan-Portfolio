@@ -19,12 +19,16 @@ export default function ProjectCard({ project }: { project: Project }) {
           height={225}
         />
         <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 [@media(hover:none)]:opacity-100  transition-opacity duration-300">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
-            <IconBrandGithub className="w-5 h-5" />
-          </a>
-          <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View live demo of ${project.title}`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
-            <ExternalLink className="w-5 h-5" />
-          </a>
+          {project.github && project.github !== "#" && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
+              <IconBrandGithub className="w-5 h-5" />
+            </a>
+          )}
+          {project.live && project.live !== "#" && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View live demo of ${project.title}`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          )}
         </div>
       </div>
       <div className="p-6 flex flex-col flex-grow">
@@ -55,12 +59,16 @@ export function HorizontalProjectCard({ project }: { project: Project }) {
           height={225}
         />
         <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 [@media(hover:none)]:opacity-100  transition-opacity duration-300">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
-            <IconBrandGithub className="w-5 h-5" />
-          </a>
-          <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View live demo of ${project.title}`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
-            <ExternalLink className="w-5 h-5" />
-          </a>
+          {project.github && project.github !== "#" && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
+              <IconBrandGithub className="w-5 h-5" />
+            </a>
+          )}
+          {project.live && project.live !== "#" && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View live demo of ${project.title}`} className="p-2 rounded-full bg-secondary hover:bg-secondary/90 transition-colors border border-border">
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          )}
         </div>
       </div>
       <div className="p-6 flex flex-col justify-between md:w-2/3">

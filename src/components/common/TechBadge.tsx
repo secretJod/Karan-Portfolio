@@ -56,7 +56,7 @@ const getTechIcon = (tech: string): JSX.Element | null => {
         ),
     c: (
         <span className="inline-flex items-center mr-1.5">
-            <Image src={"/c.svg"} alt="C" className="invert-0 dark:invert" width={14} height={14} />
+            <Image src={"/cpp.svg"} alt="C" className="invert-0 dark:invert" width={14} height={14} />
         </span>
     ),
 
